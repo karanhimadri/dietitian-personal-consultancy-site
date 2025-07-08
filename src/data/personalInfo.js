@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Dr. Priya Sharma",
+  name: "Dr. Usha Karan",
   title: "Certified Clinical Dietitian",
   subtitle: "Clinical Dietitian",
   tagline: "Transform your health with personalized nutrition coaching from an experienced clinical dietitian.",
@@ -22,9 +22,9 @@ export const personalInfo = {
   
   // Contact Information
   contact: {
-    phone: "+91 98765 43210",
-    email: "dr.priya@nutrition.com",
-    whatsapp: "+91 98765 43210",
+    phone: "+91 81709 89950",
+    email: "dr.ushakaran5182@gmail.com",
+    whatsapp: "+91 81709 89950",
     location: "Online Consultations",
     availability: "Mon-Sat, 9:00 AM - 8:00 PM IST"
   },

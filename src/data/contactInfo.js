@@ -1,9 +1,9 @@
 // Contact Information
 export const contactDetails = {
-  phone: '+91 98765 43210',
-  email: 'dr.priya@nutrition.com',
-  whatsapp: '+91 98765 43210',
-  whatsappLink: 'https://wa.me/919876543210',
+  phone: '+91 81709 89950',
+  email: 'dr.ushakaran5182@gmail.com',
+  whatsapp: '+91 81709 89950',
+  whatsappLink: 'https://wa.me/918170989950',
   location: 'Online Consultations',
   locationDescription: 'Serving clients worldwide'
 };
