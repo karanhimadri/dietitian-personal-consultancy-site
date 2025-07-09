@@ -1,22 +1,7 @@
-
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { 
-  Award, 
-  Star, 
-  Users, 
-  Clock, 
-  CheckCircle, 
-  ArrowRight,
-  Heart,
-  Shield,
-  Target,
-  Calendar,
-  BookOpen,
-  MessageCircle
-} from 'lucide-react';
+import { Award, Star, Users, Clock, CheckCircle, ArrowRight, Calendar, BookOpen, MessageCircle } from 'lucide-react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { personalInfo } from '@/data/personalInfo';
 import { getFeaturedServices } from '@/data/services';
 import { getFeaturedTestimonials } from '@/data/testimonials';
@@ -31,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-emerald-50 to-blue-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -39,7 +24,11 @@ export default function Home() {
             <div>
               <div className="inline-flex items-center bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Award className="h-4 w-4 mr-2" />
-                {personalInfo.experience.years} Years at {personalInfo.experience.hospital}
+                <span className="flex gap-x-1">
+                  <span>{personalInfo.experience.years}</span>
+                  <span>Years at</span>
+                  <span className="font-bold">{personalInfo.experience.hospital}</span>
+                </span>
               </div>
               <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
                 {personalInfo.name}
@@ -51,16 +40,16 @@ export default function Home() {
                 {personalInfo.tagline} {personalInfo.description}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link 
+                <Link
                   href="/book-consultation"
                   className="inline-flex items-center justify-center bg-emerald-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-colors"
                 >
                   Book Free Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
-                <Link 
+                <Link
                   href="/about"
-                  className="inline-flex items-center justify-center border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-50 transition-colors"
+                  className="inline-flex items-center justify-center border-2 border-emerald-600 text-emerald-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-200 transition-colors"
                 >
                   Learn More About Me
                 </Link>
@@ -120,7 +109,7 @@ export default function Home() {
               Comprehensive Nutrition Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From one-on-one consultations to specialized disease management, 
+              From one-on-one consultations to specialized disease management,
               I offer personalized nutrition solutions for your unique health journey.
             </p>
           </div>
@@ -148,7 +137,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link 
+            <Link
               href="/services"
               className="inline-flex items-center bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
             >
@@ -177,7 +166,7 @@ export default function Home() {
                       Apollo Gleneagles Experience
                     </h3>
                     <p className="text-gray-600">
-                      7+ years of clinical experience at one of India's most prestigious hospitals, 
+                      7+ years of clinical experience at one of India's most prestigious hospitals,
                       working with diverse patient populations and complex medical conditions.
                     </p>
                   </div>
@@ -191,7 +180,7 @@ export default function Home() {
                       Evidence-Based Approach
                     </h3>
                     <p className="text-gray-600">
-                      All nutrition recommendations are based on the latest scientific research 
+                      All nutrition recommendations are based on the latest scientific research
                       and proven clinical protocols for optimal health outcomes.
                     </p>
                   </div>
@@ -205,7 +194,7 @@ export default function Home() {
                       Ongoing Support
                     </h3>
                     <p className="text-gray-600">
-                      Regular follow-ups, progress monitoring, and plan adjustments to ensure 
+                      Regular follow-ups, progress monitoring, and plan adjustments to ensure
                       you achieve and maintain your health goals long-term.
                     </p>
                   </div>
@@ -230,7 +219,7 @@ export default function Home() {
                   <span className="text-gray-900 font-bold">₹5,000</span>
                 </div>
               </div>
-              <Link 
+              <Link
                 href="/book-consultation"
                 className="w-full mt-6 bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors flex items-center justify-center"
               >
@@ -272,7 +261,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link 
+            <Link
               href="/testimonials"
               className="inline-flex items-center text-emerald-600 font-semibold hover:text-emerald-700"
             >
@@ -297,7 +286,14 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {blogPosts.map((post, index) => (
               <article key={index} className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-gradient-to-br from-emerald-100 to-blue-100"></div>
+                {/* put a image source */}
+                <div className="h-48 w-full overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
                 <div className="p-6">
                   <div className="flex items-center text-sm text-gray-500 mb-3">
                     <Clock className="h-4 w-4 mr-1" />
@@ -310,7 +306,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-4">
                     {post.excerpt}
                   </p>
-                  <Link 
+                  <Link
                     href={`/blog/${post.title.toLowerCase().replace(/\s+/g, '-')}`}
                     className="inline-flex items-center text-emerald-600 font-medium hover:text-emerald-700"
                   >
@@ -322,7 +318,7 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link 
+            <Link
               href="/blog"
               className="inline-flex items-center bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
             >
@@ -337,3 +333,4 @@ export default function Home() {
     </>
   );
 }
+

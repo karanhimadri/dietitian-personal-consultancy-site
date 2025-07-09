@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://drpriyasharma-nutrition.com';
+  const baseUrl = 'https://usha.himadri.me';
   
   return [
     {

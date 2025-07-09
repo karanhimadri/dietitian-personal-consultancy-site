@@ -3,13 +3,13 @@ export const blogPosts = [
     id: 1,
     title: "Complete Guide to PCOS Nutrition: Evidence-Based Approach",
     excerpt: "Comprehensive guide to managing PCOS through nutrition, including meal plans, supplements, and lifestyle modifications that actually work.",
-    content: "Full article content here...", // This would contain the full article
+    content: "Full article content here...",
     author: "Dr. Priya Sharma",
     date: "December 20, 2024",
     readTime: "12 min read",
     category: "PCOS Management",
     tags: ["PCOS", "Hormonal Health", "Nutrition", "Women's Health"],
-    image: "/blog/pcos-nutrition.jpg",
+    image: "/images/pcos.png",
     slug: "complete-guide-pcos-nutrition",
     featured: true,
     metaDescription: "Complete evidence-based guide to PCOS nutrition management with practical meal plans and lifestyle strategies.",
@@ -25,7 +25,7 @@ export const blogPosts = [
     readTime: "5 min read",
     category: "Diabetes",
     tags: ["Diabetes", "Nutrition Myths", "Blood Sugar", "Diet"],
-    image: "/blog/diabetes-myths.jpg",
+    image: "/images/5_myths.png",
     slug: "diabetes-diet-myths-debunked",
     featured: true,
     metaDescription: "Debunking common diabetes diet myths with evidence-based nutrition science.",
@@ -41,7 +41,7 @@ export const blogPosts = [
     readTime: "7 min read",
     category: "Meal Planning",
     tags: ["PCOS", "Meal Prep", "Recipes", "Hormonal Balance"],
-    image: "/blog/meal-prep-pcos.jpg",
+    image: "/images/pcos_friendly.png",
     slug: "pcos-meal-prep-ideas",
     featured: true,
     metaDescription: "Easy PCOS-friendly meal prep recipes and ideas for hormonal balance and weight management.",
@@ -73,7 +73,7 @@ export const blogPosts = [
     readTime: "8 min read",
     category: "Weight Management",
     tags: ["Weight Loss", "Metabolism", "Age 40+", "Hormones"],
-    image: "/blog/weight-loss-40.jpg",
+    image: "",
     slug: "weight-loss-after-40",
     featured: false,
     metaDescription: "Effective weight loss strategies for people over 40, addressing metabolism and hormonal changes.",
@@ -164,7 +164,7 @@ export const blogPosts = [
 export const categories = [
   "All Posts",
   "Diabetes",
-  "PCOS Management", 
+  "PCOS Management",
   "Weight Management",
   "Heart Health",
   "Thyroid Health",
@@ -208,10 +208,10 @@ export const getBlogCategories = () => {
 
 export const getRelatedPosts = (currentPost, count = 3) => {
   return blogPosts
-    .filter(post => 
-      post.id !== currentPost.id && 
-      (post.category === currentPost.category || 
-       post.tags.some(tag => currentPost.tags.includes(tag)))
+    .filter(post =>
+      post.id !== currentPost.id &&
+      (post.category === currentPost.category ||
+        post.tags.some(tag => currentPost.tags.includes(tag)))
     )
     .slice(0, count);
 };
@@ -226,3 +226,4 @@ export const searchPosts = (query) => {
 };
 
 export default blogPosts;
+

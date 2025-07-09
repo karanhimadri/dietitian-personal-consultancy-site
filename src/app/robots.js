@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: ['/private/', '/admin/', '/api/'],
     },
-    sitemap: 'https://drpriyasharma-nutrition.com/sitemap.xml',
+    sitemap: 'https://usha.himadri.me/sitemap.xml',
   };
 }

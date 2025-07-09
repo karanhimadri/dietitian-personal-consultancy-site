@@ -4,14 +4,14 @@ export const personalInfo = {
   subtitle: "Clinical Dietitian",
   tagline: "Transform your health with personalized nutrition coaching from an experienced clinical dietitian.",
   description: "Get evidence-based diet plans tailored to your unique needs and health goals.",
-  
+
   // Experience & Credentials
   experience: {
     years: "7+",
     hospital: "Apollo Gleneagles Hospital",
     location: "Kolkata"
   },
-  
+
   // Statistics
   stats: {
     clients: "500+",
@@ -19,7 +19,7 @@ export const personalInfo = {
     successRate: "95%",
     rating: "4.9/5"
   },
-  
+
   // Contact Information
   contact: {
     phone: "+91 81709 89950",
@@ -28,7 +28,7 @@ export const personalInfo = {
     location: "Online Consultations",
     availability: "Mon-Sat, 9:00 AM - 8:00 PM IST"
   },
-  
+
   // Social Media Links
   socialMedia: {
     facebook: "https://www.facebook.com/drpriyasharma",
@@ -36,21 +36,21 @@ export const personalInfo = {
     twitter: "https://www.twitter.com/drpriyasharma",
     linkedin: "https://www.linkedin.com/in/drpriyasharma"
   },
-  
+
   // Professional Background
   background: {
     currentRole: "Independent Nutrition Consultant",
     previousRole: "Senior Clinical Dietitian at Apollo Gleneagles Hospital",
     specialties: [
       "Clinical Nutrition",
-      "Diabetes Management", 
+      "Diabetes Management",
       "PCOS Nutrition",
       "Weight Management",
       "Heart Health",
       "Sports Nutrition"
     ]
   },
-  
+
   // Education
   education: [
     {
@@ -66,7 +66,7 @@ export const personalInfo = {
       details: "Foundation in food science, biochemistry, and nutrition principles"
     }
   ],
-  
+
   // Certifications
   certifications: [
     "Registered Dietitian (RD) - Indian Dietetic Association",
@@ -77,7 +77,7 @@ export const personalInfo = {
     "Enteral & Parenteral Nutrition Certification",
     "Pediatric Nutrition Specialist"
   ],
-  
+
   // Professional Experience
   professionalExperience: [
     {
@@ -103,7 +103,7 @@ export const personalInfo = {
       ]
     }
   ],
-  
+
   // Areas of Specialization
   specializations: [
     {
@@ -147,7 +147,7 @@ export const personalInfo = {
 
   // Mission Statement
   mission: "To empower individuals with evidence-based nutrition knowledge and personalized guidance that leads to sustainable health transformations. I believe that proper nutrition is not about restriction, but about nourishing your body to achieve optimal health and vitality.",
-  
+
   // Office Hours
   officeHours: {
     consultation: "Monday - Saturday, 9:00 AM - 8:00 PM IST",

@@ -17,7 +17,7 @@ export const metadata = {
   authors: [{ name: "Dr. Usha Karan" }],
   creator: "Dr. Usha Karan",
   publisher: "Dr. Usha Karan Nutrition Consultancy",
-  metadataBase: new URL('https://drpriyasharma-nutrition.com'),
+  metadataBase: new URL('https://usha.himadri.me'),
   alternates: {
     canonical: '/',
   },
@@ -29,7 +29,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://drpriyasharma-nutrition.com',
+    url: 'https://usha.himadri.me',
     title: 'Dr. Usha Karan - Clinical Dietitian | Apollo Gleneagles Experience',
     description: 'Certified Clinical Dietitian with 7+ years experience at Apollo Gleneagles Hospital. Get personalized nutrition coaching and diet plans.',
     siteName: 'Dr. Usha Karan Nutrition',

@@ -24,7 +24,7 @@ export default function Header() {
       <div className="bg-emerald-600 text-white py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-sm">
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-col items-center space-x-4 lg:flex-row">
               <a href={`tel:${contactDetails.phone.replace(/\s/g, '')}`} className="flex items-center space-x-1 hover:text-emerald-200">
                 <Phone className="h-4 w-4" />
                 <span>{contactDetails.phone}</span>

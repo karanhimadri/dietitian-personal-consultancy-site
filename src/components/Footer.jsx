@@ -1,16 +1,5 @@
 import Link from 'next/link';
-import { 
-  Facebook, 
-  Instagram, 
-  Twitter, 
-  Linkedin, 
-  Phone, 
-  Mail, 
-  MapPin,
-  Award,
-  Users,
-  Clock
-} from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, Phone, Mail, MapPin, Award, Users, Clock } from 'lucide-react';
 import { contactDetails } from '@/data/contactInfo';
 import { personalInfo } from '@/data/personalInfo';
 
@@ -48,11 +37,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold text-emerald-400 mb-4">
-              Dr. Priya Sharma
+              Dr. Usha Karan
             </h3>
             <p className="text-gray-300 mb-4 leading-relaxed">
-              Certified Clinical Dietitian with 7+ years of experience at Apollo Gleneagles Hospital, Kolkata. 
-              Specializing in personalized nutrition coaching, clinical nutrition, and lifestyle management 
+              Certified Clinical Dietitian with 7+ years of experience at Apollo Gleneagles Hospital, Kolkata.
+              Specializing in personalized nutrition coaching, clinical nutrition, and lifestyle management
               for sustainable health outcomes.
             </p>
             <div className="flex space-x-4">
@@ -138,3 +127,4 @@ export default function Footer() {
     </footer>
   );
 }
+

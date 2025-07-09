@@ -46,6 +46,7 @@ html {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -66,27 +67,42 @@ html {
 }
 
 /* Form input focus styles */
-input:focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   @apply ring-2 ring-emerald-500 border-emerald-500 outline-none;
 }
 
 /* Global input and placeholder text colors */
-input, textarea, select {
-  color: #000000 !important; /* Black text for input values */
+input,
+textarea,
+select {
+  color: #000000 !important;
+  /* Black text for input values */
 }
 
-input::placeholder, textarea::placeholder, select::placeholder {
-  color: #9ca3af !important; /* Light grey for placeholders */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: #9ca3af !important;
+  /* Light grey for placeholders */
   opacity: 1;
 }
 
 @media (prefers-color-scheme: dark) {
-  input, textarea, select {
-    color: #000000 !important; /* Keep black text even in dark mode */
+
+  input,
+  textarea,
+  select {
+    color: #000000 !important;
+    /* Keep black text even in dark mode */
   }
-  
-  input::placeholder, textarea::placeholder, select::placeholder {
-    color: #9ca3af !important; /* Light grey for placeholders */
+
+  input::placeholder,
+  textarea::placeholder,
+  select::placeholder {
+    color: #9ca3af !important;
+    /* Light grey for placeholders */
     opacity: 1;
   }
 }
@@ -146,7 +162,7 @@ input::placeholder, textarea::placeholder, select::placeholder {
   .bg-emerald-600 {
     background-color: #000000;
   }
-  
+
   .text-emerald-600 {
     color: #000000;
   }
@@ -172,7 +188,7 @@ input::placeholder, textarea::placeholder, select::placeholder {
   .text-responsive {
     font-size: clamp(1rem, 4vw, 1.25rem);
   }
-  
+
   .heading-responsive {
     font-size: clamp(1.5rem, 6vw, 2.5rem);
   }

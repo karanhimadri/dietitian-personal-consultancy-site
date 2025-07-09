@@ -213,7 +213,7 @@ export const successContent = {
   actions: [
     {
       type: 'primary',
-      text: 'Contact Dr. Priya',
+      text: 'Contact Dr. Usha',
       href: 'mailto:dr.priya@nutrition.com'
     },
     {

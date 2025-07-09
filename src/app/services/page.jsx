@@ -223,7 +223,7 @@ export default function Services() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {servicePricingTiers.map((tier, index) => (
-              <div key={tier.id} className={tier.containerClass || "bg-white rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow"}>
+              <div key={tier.id} className={tier.containerClass || "bg-white text-gray-600 rounded-2xl p-8 shadow-sm hover:shadow-lg transition-shadow"}>
                 {tier.popular && (
                   <div className="text-center mb-4">
                     <span className="bg-yellow-400 text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
